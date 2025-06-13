@@ -1,0 +1,100 @@
+/* Estilo para el fondo de la página */
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url("images/Leonardo_Lightning_dark_creative_background_with_pops_of_colo_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenedor con fondo gris transparente */
+.fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Capa oscura para el fondo */
+  z-index: 1; /* El fondo debe estar debajo del menú */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px; /* Para que no se sobreponga con el menú fijo */
+}
+
+/* Estilo del formulario */
+.formulario {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo gris con opacidad */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px; /* Ancho máximo del formulario */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #0056b3;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Estilo para el menú */
+.menuPrincipal {
+  position: fixed; /* Fija el menú en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%; 
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para el menú */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  z-index: 10; 
+  
+}
+
+.menuLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-family: "Bebas Neue", sans-serif;
+
+  a {
+    font-size: medium;
+    color: #f3f0e1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #c0864c; 
+    }
+  }
+}

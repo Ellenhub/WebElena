@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Índice</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="estiloformulario.css" />
+   <link rel="stylesheet" href="main.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    p {
+      color: blue;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú de navegación -->
+  <nav class="menuPrincipal">
+    <ul class="menuLinks">
+      <li><a href="index.html">Índice</a></li>
+      <li><a href="Sobre_Mi.html">Sobre Mi</a></li>
+      <li><a href="Servicios.html">Qué Ofrezco</a></li>
+      <li><a href="Formacion.html">Mi Formación</a></li>
+      <li><a href="Proyectos.html">Proyectos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Formulario con fondo gris transparente -->
+  <div class="fondo">
+    <div class="formulario">
+      <form action="/registrar-usuario" method="post" name="formulario-registro">
+        <!-- Campos del formulario -->
+        <label for="username">Usuario</label>
+        <input type="text" name="username" id="username" value="Usuario" required>
+
+        <label for="nombre">Nombre completo</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" required>
+
+        <label for="clave">Contraseña</label>
+        <input type="password" name="clave" id="clave" placeholder="Contraseña" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" name="correo" id="correo" placeholder="ejemplo@gmail.com" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" name="teléfono" id="telefono" placeholder="+34 612 345 678" required>
+
+        <label for="sitio">Sitio web</label>
+        <input type="url" name="sitio" id="sitio" placeholder="https://ejemplo.com" required>
+
+        <input type="submit" value="Enviar datos">
+        <input type="reset" value="Limpiar Formulario">
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+.contenedor {
+  display: flex;
+  border: 2px solid #333;
+  padding: 20px;
+}
+
+.item {
+  padding: 20px;
+  margin: 5px;
+  color: white;
+}
+#pond {
+  display: flex;
+}
+
+.contenedorlista {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 00px;
+  gap: 95px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.itemgaleria {
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.formulario {
+  display: flex;
+  border: 2px solid #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.contenedor-imagen-texto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.texto {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.imagen {
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px; /* opcional: bordes redondeados */
+}

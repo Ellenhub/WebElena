@@ -1,0 +1,28 @@
+.carrusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carrusel-imagenes {
+  display: flex;
+  gap: 10px;
+}
+
+.carrusel img {
+  width: 200px; /* Ajusta el tamaño según necesites */
+  height: auto;
+  object-fit: cover;
+}
+
+button {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
